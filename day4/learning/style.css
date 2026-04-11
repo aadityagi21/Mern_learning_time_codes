@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #5E0006;
+}
+
+.box{
+    margin: 10%;
+    height: 400px;
+    width: 400px;
+    background-color: #EED9B9;
+    border: 10px solid #9B0F06;
+    padding: 10px;
+    quotes: "$" "$";
+}
+
+.box h1{
+    color: #D53E0F;
+}

@@ -1,0 +1,41 @@
+# UI Assessment: Simple Box Layout
+
+## Task:
+
+Create a simple layout with 3 boxes stacked vertically.
+
+---
+
+## Requirements:
+
+### Container
+
+- Width: 400px
+- Center aligned
+- Background: light gray
+- Padding: 20px
+
+---
+
+### Box (same for all 3)
+
+- Width: 100%
+- Height: 100px
+- Background: blue
+- Border: 2px solid black
+- Margin-bottom: 15px
+
+---
+
+### Special Conditions
+
+- Text inside each box should be centered (both horizontally and vertically)
+- Use padding to create space between text and border
+- There should be no overflow
+
+---
+
+## Extra Task:
+
+- Change the height of the 2nd box to 150px
+- Apply `box-sizing: border-box` to the 3rd box and observe the difference

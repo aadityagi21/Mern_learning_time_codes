@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.container{
+    background-color: lightgray;
+    width: 400px;
+    margin:0 auto;
+    padding: 20px;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    padding: 50%;
+}
+
+#b{
+    height: 150px;
+}
+
+#c{
+    box-sizing: border-box;
+}
