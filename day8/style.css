@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+}
+
+.left{
+  height: 10%;
+  width: 50%;
+  line-height: 0.9;
+  padding: 10px 100px;
+}
+
+.left h1{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 400;
+}
+
+.left span{
+  color: grey;
+  font-weight: 200;
+}
+
+.right{
+  position: absolute;
+  height: 10%;
+  width: 50%;
+  top: 10px;
+  right: 100px;
+}
+
+.rightbox{
+  position: absolute;
+  right: 0;
+}
+
+.right-button{
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+}
+ 
+.real-button{
+  padding: 3px;
+  border: none;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+ main .heading{
+  /* background-color: green; */
+  width: 100%;
+  height: calc(100%/4);
+  border-bottom: solid rgb(29, 28, 28) 1px;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+
+}
+
+
+#x1 h1{
+  position: absolute;
+  font-size: 140px;
+  /* background-color: blue; */
+  top: -10%;
+  left: 37%;
+
+}
+
+#x2 h1{
+  position: absolute;
+  font-size: 150px;
+  top: -27%;
+  left: 10%;
+}
+
+#x3 h1{
+  position: absolute;
+  font-size: 120px;
+  /* background-color: blue; */
+  top: -24%;
+  left: 32%;
+}
+
+#x4 h1{
+  position: absolute;
+  font-size: 140px;
+  /* background-color: blue; */
+  top: -20%;
+  left: 15%;
+}
+
+#x4{
+  border: none;
+}
+
+#x1 .image1{
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  height: 230px;
+  width: 150px;
+  background-color: red;
+}
+
+.image1 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+main .img2_3{
+  position: absolute;
+  height: 50%;
+  width: 150px;
+  top: 41.6%;
+  left: 55%;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+
+  background-color: green;
+
+  overflow: hidden;
+}
+
+#x3 .image3{
+  position: absolute;
+  bottom: 0;
+  left: 17%;
+  height: 100%;
+  width: 12%;
+  border-radius: 100%;
+  background-color: red;
+  overflow: hidden;
+}
+
+.image3 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.img2_3 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.arrow_circle{
+  height: 80%;
+  width: 10%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  border-radius: 100%;
+
+  border: 5px solid white;
+
+  /* background-color: red; */
+}
+
+.arrow_circle h1{
+  margin-left: -15%;
+  margin-top: -22%;
+}
+
+#x4 .lines{
+  /* background-color: blue; */
+  height: 100px;
+  width: 250px;
+  position: absolute;
+  left: 65%;
+  top: 20%;
+  font-size: 22px;
+}
+
+.lines span{
+  color: grey;
+}
+
+.whitebody{
+  position: absolute;
+  top: 140%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.whitebody h1{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 50px;
+}
+
+.whitebody p{
+  position: absolute;
+  left: 65%;
+  top: 67%;
+  font-size: 30px;
+}
+
+.whitebody p button{
+  background-color: black;
+  color: white;
+  border: none;
+  height: 25px;
+  font-size: 25px;
+}
+
+/* * position absolute , relative , clac() , transform translate */
+/* * object fit cover , object position center , overflow hidden in parent container*/
