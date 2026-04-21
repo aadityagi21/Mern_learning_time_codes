@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    background-color: #FBFBFD;
+    width: 100%;
+    height: 51px;
+}
+
+.navbar .logo {
+    position: absolute;
+    left: 195px;
+    top: 1px;
+}
+
+.navbar .navbuttons {
+    position: absolute;
+    left: 220px;
+    top: 15px;
+
+
+}
+
+.navbuttons a {
+    text-decoration: none;
+    color: black;
+    margin-left: 33px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar .search {
+    position: absolute;
+    left: 1115px;
+    top: 2px;
+
+}
+
+.navbar .bag {
+    position: absolute;
+    left: 1165px;
+    top: 4px;
+}
+
+.headline {
+    /* background-color: aqua; */
+    position: absolute;
+    left: 420px;
+    top: 60px;
+}
+
+.headline p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.headline a {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    margin-top: 10px;
+}
+
+main .cardgroup {
+    width: 100%;
+    height: 600px;
+    margin-top: 45px;
+    /* background-color: #F5F5F7; */
+    background-color: red;
+}
+
+main #firstcard {
+    background-image: url(https://www.apple.com/v/home/cm/images/heroes/apple-watch-series-11/hero_apple_watch_series_11__bdz1mml4dx6q_small.jpg);
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 80%;
+    position: relative;
+
+}
+
+main .watchseries {
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    /* background-color: greenyellow; */
+    top: 8%;
+    left: 34%;
+    background-image: url(https://www.apple.com/v/home/a/images/logos/apple-watch-series-11/hero_logo_apple_watch_series_11__d7d7nh53wq2q_small.png);
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    background-size: 95%;
+    background-color: #F5F5F7;
+}
+
+main #firstcard h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    position: absolute;
+    left: 33%;
+    top: 20%;
+}
+
+.card1button1 {
+    background-color: #0076DF;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    border: none;
+    width: 10%;
+    height: 8%;
+    border-radius: 50px;
+    position: absolute;
+    left: 40%;
+    top: 28%;
+}
+
+.card1button2 {
+    background-color: white;
+    color: #0076DF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    border: 1px solid #0076DF;
+    width: 7%;
+    height: 8%;
+    border-radius: 50px;
+    position: absolute;
+    left: 51%;
+    top: 28%;
+}
+
+
+main #secondcard {
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #F5F5F7;
+    margin-top: 20px;
+}
+
+main #thirdcard {
+    background-image: url(https://www.apple.com/v/home/cm/images/heroes/macbook-neo/hero_macbook_neo__gnm3snkti4a6_small.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 100%;
+    position: relative;
+    background-color: #F5F5F7;
+    margin-top: 20px;
+}
+
+#thirdcard h1 {
+    position: absolute;
+    left: 37%;
+    top: 8%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 53px;
+    font-weight: 500;
+}
+
+main #thirdcard h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    position: absolute;
+    left: 36.5%;
+    top: 20%;
+}
+
+main .cardgroup1 {
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+main #fourthcard {
+    width: 49.5%;
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/ipad-air-m4/promo_ipad_air_m4__f9ie3h3pzr6m_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+    position: relative;
+    background-color: greenyellow;
+    left: 0;
+    top: 0;
+}
+
+main #fifthcard {
+    width: 49.5%;
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/macbook-pro/promo_macbook_pro__e3xqrygvp9ea_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+    position: relative;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#fourthcard .ipadair {
+    position: absolute;
+    background-color: #ADDCEE;
+    height: 10%;
+    width: 30%;
+    top: 10%;
+    left: 40%;
+    background-image: url(https://www.apple.com/v/home/a/images/logos/ipad-air-m4/promo_logo_ipad_air__cxpnwthgj5yu_small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#fourthcard h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 23px;
+}
+
+#fourthcardb1 {
+    width: 20%;
+    left: 35%;
+}
+
+#fourthcardb2 {
+    width: 15%;
+    left: 58%;
+    background-color: #BAE1F0;
+}
+
+#fifthcard {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#fifthcard h1 {
+    position: absolute;
+    left: 33%;
+    top: 9%;
+    font-size: 35px;
+}
+
+#fifthcard h2 {
+    position: absolute;
+    left: 23%;
+    top: 17%;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#fifthcardb1 {
+    top: 25.2%;
+    left: 31%;
+    width: 20%;
+    height: 8%;
+
+}
+
+#fifthcardb2 {
+    width: 10%;
+    top: 25%;
+    left: 53%;
+    background-color: black;
+
+}
+
+.cardgroup2 {
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.cardgroup2 #sixthcard {
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_small.jpg);
+    background-color: green;
+    background-repeat: no-repeat;
+    width: 49.5%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cardgroup2 #seventhcard {
+
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/apple-card/promo_apple_card__5cm7draujpey_small.jpg);
+    background-color: purple;
+    background-repeat: no-repeat;
+    width: 49.5%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+#sixthcard h1,h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#sixthcard h1 {
+
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.h2one{
+
+    position: absolute;
+    top: 24%;
+    left: 15%;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.h2two{
+
+    position: absolute;
+    top: 28%;
+    left: 13%;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#sixthcard #fifthcardb1{
+    left: 16%;
+    top: 35%;
+    width: 8%;
+}
+
+#sixthcard #fifthcardb2{
+    left: 25.5%;
+    top: 35%;
+    width: 5%;
+    background-color: #EEF6FD;
+}
+
+#seventhcard .ii {
+
+    background-color: green;
+
+    position: absolute;
+    width: 45%;
+    height: 30%;
+    top: 10%;
+    right: 30%;
+    background-image: url(ss.jpg);
+    background-position: center;
+}
+
+.ending{
+    height: 1500px;
+    width: 100%;
+    background-color: #F5F5F7;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+.inside{
+    width: 70%;
+    height: 80%;
+    background-color: #F5F5F7;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+
+}
+
+.inside p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    color: #8E8E8F;
+}
+
+hr{
+    border: none;
+    list-style: none;
+    height: 1px;
+    background-color: grey;
+}
+
+.inside a{
+    color: rgb(82, 82, 82);
+
+}
+
+.box1{
+    /* background-color: #F5F5F7; */
+    height: 500px;
+    width: 15%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+h5{
+    font-weight: 500;
+}
+
+.box1 a{
+    color: gray;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.box2 a{
+    color: gray;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.box3 a{
+    color: gray;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.box4 a{
+    color: gray;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.box5 a{
+    color: gray;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.box2{
+    /* background-color: green; */
+    height: 500px;
+    width: 15%;
+    position: absolute;
+    left: 20%;
+    top: 39.1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.box3{
+    /* background-color: green; */
+    height: 500px;
+    width: 15%;
+    position: absolute;
+    left: 40%;
+    top: 39.1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.box4{
+    /* background-color: green; */
+    height: 500px;
+    width: 15%;
+    position: absolute;
+    left: 60%;
+    top: 39.1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.box5{
+    /* background-color: ; */
+    height: 500px;
+    width: 15%;
+    position: absolute;
+    left: 80%;
+    top: 39.1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
