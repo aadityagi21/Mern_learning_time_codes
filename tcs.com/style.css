@@ -1,0 +1,1101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.fixed-video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.fixed-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.upper-wall{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.about{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar{
+    width: 100%;
+    height: 72px;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo{
+    height: 48px;
+    width: 166px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar .navsection{
+    height: 50px;
+    width: 600px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+
+}
+
+.ua{
+    width: 100%;
+    height: 35%;
+    background-color: black;
+}
+
+.navbar .navsection p{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.navbar .searchbox{
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 18px;
+    left: 970px;
+}
+
+.searchbox svg{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.globallogo {
+    height: 35px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 18px;
+    left: 1030px;
+}
+
+.globallogo svg{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar #p_hu_mai{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 21px;
+    left: 1060px;
+    font-size: 19px;
+}
+
+.navbar #dusra_p_hu_mai{
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 26px;
+    left: 1160px;
+    font-size: 16px;
+}
+
+.navbar .second_logo{
+    height: 40px;
+    width: 90px;
+    background-color: black;
+    position: absolute;
+    top: 13px;
+    left: 1250px;
+}
+
+.fixed-video .pauselogo{
+    height: 55px;
+    width: 55px;
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.fixed-video .pauselogo svg{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    margin-left: 22%;
+    margin-top: 13px;
+}
+
+.upper-wall .learnmore{
+    height: 60px;
+    width: 170px;
+    border-radius: 50px;
+    border: none;
+    background-color: #005B9C;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    position: absolute;
+    bottom: 0px;
+    left: 180px;
+}
+
+.about{
+    position: relative;
+}
+
+.about .firstheading{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    background-color: white;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+}
+
+.backarrow{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+
+}
+
+.about .backarrow{
+    top: 110px;
+    left: 1150px;
+}
+
+.frontarrow{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+}
+
+.about .frontarrow{
+    top: 110px;
+    left: 1230px;
+}
+
+.about  .backarrow p{
+    font-size:35px;
+    color: gray;
+}
+
+.about  .frontarrow p{
+    font-size:35px;
+}
+
+.about .cards{
+    position: absolute;
+    top: 200px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.about .cards .image1{
+    height: 256px;
+    width: 370px;
+    background-color: black;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    background-image: url(https://www.tcs.com/content/dam/global-tcs/en/images/what-we-do/services/enterprise/tcs-oracle-ai-web.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .cards .image2{
+    height: 256px;
+    width: 350px;
+    background-color: black;
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    background-image: url(https://www.tcs.com/content/dam/global-tcs/en/images/home/cyber.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .cards .image3{
+    height: 256px;
+    width: 350px;
+    background-color: green;
+    position: absolute;
+    left: 910px;
+    top: 50px;
+    background-image: url(https://www.tcs.com/content/dam/global-tcs/en/images/home/ms.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about .cards .lines1{
+    height: 290px;
+    width: 370px;
+    background-color: white;
+    position: absolute;
+    left: 60px;
+    top: 320px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about .cards h1{
+    font-weight: 450;
+}
+
+.about .cards .lines1 h3{
+    font-weight: 450;
+}
+.about .cards .lines2 h3{
+    font-weight: 450;
+}
+.about .cards .lines3 h3{
+    font-weight: 450;
+}
+
+.about .cards .lines2{
+    height: 290px;
+    width: 370px;
+    background-color: white;
+    position: absolute;
+    left: 500px;
+    top: 320px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about .cards .lines3{
+    height: 290px;
+    width: 370px;
+    background-color: white;
+    position: absolute;
+    left: 910px;
+    top: 320px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about .cards hr{
+    border: none;
+    background-color: gray;
+    height: 1px;
+}
+
+.secondabout{
+    height: 95%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    position: relative;
+}
+
+.secondabout h1{
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.secondabout .image4{
+    height: 220px;
+    width: 400px;
+    background-color: green;
+    position: absolute;
+    left: 50px;
+    top: 130px;
+    background-image: url(https://www.tcs.com/content/dam/global-tcs/en/images/home/industry.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secondabout .image5{
+    height: 220px;
+    width: 400px;
+    background-color: green;
+    position: absolute;
+    left: 480px;
+    top: 130px;
+    background-image: url(https://www.tcs.com/content/dam/global-tcs/en/images/home/services.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secondabout .image6{
+    height: 220px;
+    width: 400px;
+    background-color: green;
+    position: absolute;
+    left: 900px;
+    top: 130px;
+    background-image: url(https://www.tcs.com/content/dam/global-tcs/en/images/home/p&p.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secondabout .lines4{
+    height: 200px;
+    width: 400px;
+    background-color: #333737;
+    position: absolute;
+    left: 50px;
+    top: 350px;
+}
+
+.secondabout .lines5{
+    height: 200px;
+    width: 400px;
+    background-color: #333737;
+    position: absolute;
+    left: 480px;
+    top: 350px;
+}
+
+.secondabout .lines6{
+    height: 200px;
+    width: 400px;
+    background-color: #333737;
+    position: absolute;
+    left: 900px;
+    top: 350px;
+}
+
+.secondabout .lines h1{
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+}
+
+.secondabout .lines h3{
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.lines .circlearrow{
+    height: 40px;
+    width: 40px;
+    background-color: #4E84C4;
+    border-radius: 50px;
+    position: absolute;
+    top: 70px;
+    right: 20px
+}
+
+.lines .circlearrow h1{
+    background-color: none;
+    font-size: 30px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 6px;
+    top:  -8%;
+}
+
+
+.thirdabout{
+    height: 120%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top:2090px;
+}
+
+
+.thirdabout .sec_heading{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+}
+
+.thirdabout .sec_heading h1{
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.thirdabout .sec_frontarrow{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    top: 110px;
+    left: 1150px;
+}
+
+.thirdabout .sec_frontarrow p{
+    font-size:35px;
+    color: black;
+}
+
+.thirdabout .sec_backarrow{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    top: 110px;
+    left: 1100px;
+}
+
+
+.thirdabout  .sec_backarrow p{
+    font-size:35px;
+    color: gray;
+}
+
+.thirdabout .fullbox1{
+    height: 492px;
+    width: 380px;
+    background-color: red;
+    position: absolute;
+    left: 80px;
+    top: 170px;
+    border-radius: 10px;
+
+    background-image: url(a1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thirdabout .fullbox2{
+    height: 492px;
+    width: 380px;
+    background-color: red;
+    position: absolute;
+    left: 490px;
+    top: 170px;
+    border-radius: 10px;
+
+    background-image: url(a2.jpg);
+    background-size: cover;
+}
+
+.thirdabout .fullbox3{
+    height: 492px;
+    width: 380px;
+    background-color: red;
+    position: absolute;
+    left: 900px;
+    top: 170px;
+    border-radius: 10px;
+
+    background-image: url(a3.jpg);
+    background-size: cover;
+}
+
+
+.fourthabout{
+    
+    height: 140%;
+    width: 100%;
+    background-color: #F4F3F9;
+    position: absolute;
+    top:2859px;
+}
+
+.fourthabout #firsth1{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F4F3F9;
+    position: absolute;
+    left: 80px;
+    top: 70px;
+    font-weight: 400;
+}
+
+.fourthabout .mainbox{
+    height: 620px;
+    width: 700px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 80px;
+    top: 150px;
+    border-radius: 10px;
+    
+}
+
+.fourthabout .mainbox .cornerflag{
+    height: 30px;
+    width: 55px;
+    background-color: h#4E84C4;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-image: url(Flags_UK.svg);
+    background-size: cover;
+}
+
+.fourthabout .mainbox h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: 65px;
+    top: 9px;
+}
+
+.fourthabout .mainbox h1 span{
+    font-size: 25px;
+}
+
+.fourthabout .mainbox .image{
+    height: 350px;
+    width: 550px;
+    background-color: black;
+    position: absolute;
+    left: 60px;
+    top: 105px;
+    background-image: url(https://www.tcs.com/content/dam/global-tcs/en/images/home/london-marathon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.fourthabout .mainbox .rotated-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -160px;
+    top: 290px;
+    color: #4E84C4;
+}
+
+.fourthabout .mainbox .normal-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 60px;
+    top: 470px;
+}
+
+.fourthabout .mainbox .readmore{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 60px;
+    top: 570px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.fourthabout .firstcard{
+    /* background-color: hotpink; */
+    height:55px;
+    width: 600px;
+    rotate: -90deg;
+    position: absolute;
+    left: 530px;
+    top: 450px;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.2px solid gray;
+
+}
+
+.fourthabout .firstcard h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 70px;
+    color: #598CC8;
+}
+
+.fourthabout .secondcard{
+    /* background-color: hotpink; */
+    height:55px;
+    width: 600px;
+    rotate: -90deg;
+    position: absolute;
+    left: 586px;
+    top: 396px;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid gray;
+
+}
+
+.fourthabout .secondcard h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 70px;
+    color: #598CC8;
+}
+.fourthabout .thirdcard{
+    /* background-color: hotpink; */
+    height:55px;
+    width: 600px;
+    rotate: -90deg;
+    position: absolute;
+    left: 643px;
+    top: 342px;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid gray;
+
+}
+
+.fourthabout .thirdcard h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 70px;
+    color: #598CC8;
+}
+.fourthabout .fourthcard{
+    /* background-color: hotpink; */
+    height:55px;
+    width: 600px;
+    rotate: -90deg;
+    position: absolute;
+    left: 700px;
+    top: 288px;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid gray;
+
+}
+
+.fourthabout .fourthcard h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 70px;
+    color: #598CC8;
+}
+
+.fourthabout .fifthcard{
+    /* background-color: hotpink; */
+    height:55px;
+    width: 600px;
+    rotate: -90deg;
+    position: absolute;
+    left: 756px;
+    top: 236px;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid gray;
+
+}
+
+.fourthabout .fifthcard h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 70px;
+    color: #598CC8;
+}
+.fourthabout .sixthcard{
+    /* background-color: hotpink; */
+    height:55px;
+    width: 600px;
+    rotate: -90deg;
+    position: absolute;
+    left: 810px;
+    top: 180px;
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid gray;
+
+}
+
+.fourthabout .sixthcard h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 70px;
+    color: #598CC8;
+}
+
+.fourthabout .flags{
+    height: 30px;
+    width: 45px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 180px;
+    left: 807px;
+}
+
+#flagone{
+    background-image: url(flags-usa.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#flagtwo{
+    left: 862.5px;
+    background-image: url(Flags_UK.svg);
+    background-size: cover;
+    background-position: center;
+}
+#flagthree{
+    left: 918px;
+        background-image: url(Flags_Malaysia.svg);
+        background-size: cover;
+        background-position: center;
+}
+#flagfour{
+    left: 976px;
+        background-image: url(Flags_UK.svg);
+        background-size: cover;
+        background-position: center;
+}
+
+#flagfive{
+    left: 1033px;
+    background-image: url(flags-usa.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#flagsix{
+    left: 1087.5px;
+    background-image: url(flags-usa.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fifthabout{
+    height: 110%;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 3750px;
+}
+
+.fifthabout .onehead{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.fifthabout .frontarrow{
+    top: 90px;
+    left: 1150px;
+}
+
+.fifthabout .backarrow{
+    top: 90px;
+    left: 1100px;
+}
+
+.fifthabout  .backarrow p{
+    font-size:35px;
+    color: gray;
+}
+
+.fifthabout  .frontarrow p{
+    font-size:35px;
+}
+
+.fifthabout .cards{
+    /* background-color: tomato; */
+    height: 500px;
+    width: 1150px;
+    position: absolute;
+    top: 170px;
+    left: 80px;
+    display: flex;
+    gap: 50px;
+}
+
+.fifthabout .cards .card1{
+    background-color: rgb(83, 83, 102);
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    background-image: url(s1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fifthabout .cards .card2{
+    background-color: green;
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    background-image: url(s2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fifthabout .cards .card3{
+    background-color: yellow;
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    background-image: url(s3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sixthabout{
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 4450px;
+}
+
+.sixthabout .heading{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    top: 80px;
+    left: 200px;
+}
+
+.sixthabout .heading2{
+    text-transform: none;
+    font-size: 25px;
+    top: 120px;
+    left: 200px;
+}
+
+.sixthabout .heading3{
+    text-transform: none;
+    top: 170px;
+    left: 200px;
+    line-height: 27px;
+}
+
+.sixthabout .heading4{
+    text-transform: none;
+    top: 380px;
+    left: 200px;
+    line-height: 30px;
+}
+
+.sixthabout .arrowbox{
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 379px;
+    left: 325px;
+    background-image: url(arrowbox.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sixthabout .mainimage{
+    height: 269px;
+    width: 545px;
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    border-radius: 10px;
+    background-image: url(https://s7ap1.scene7.com/is/image/TCSCOMprod/27-3-26-TCSMarathon-career?wid=592&hei=333&dpr=off);
+    
+}
+
+.seventhabout{
+    height: 80%;
+    width: 100%;
+    background-color: #1E2222;
+    position: absolute;
+    top: 4963px;
+}
+
+.seventhabout .one{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+.seventhabout .two{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    position: absolute;
+    left: 635px;
+    top: 155px;
+}
+
+.seventhabout .three{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    left: 380px;
+    top: 260px;
+}
+
+.seventhabout .four{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    left: 390px;
+    top: 290px;
+}
+
+.seventhabout .button{
+    margin: 350px 0px 0px 590px;
+}
+
+.seventhabout .five{
+    height: 50px;
+    width: 160px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #1E2222;
+}
+
+.seventhabout .five:hover{
+    background-color: white;
+    color:#1E2222;
+    cursor: auto;
+}
+
+.eightabout{
+    height: 20%;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 5476px;
+}
+
+.eightabout .borderline{
+    height: 2px;
+    width: 94%;
+    background-color: white;
+    position: absolute;
+    left: 40px;
+}
+
+.eightabout .logo{
+    height: 60px;
+    width: 220px;
+    /* background-color: red; */
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    background-image: url(https://cdn.cookielaw.org/logos/347378bb-e70c-4c3d-83e3-8cdc2562720a/018e320e-1201-7c4a-a9e9-e56c5e7fe362/6b94f91b-e0a2-4067-bbdc-c40d4a687808/TCS_Logo_1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.eightabout .one {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    left: 340px;
+    top: 30px;
+}
+
+.eightabout .two {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    left: 340px;
+    top: 60px;
+}
+               
+
+.eightabout .three {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    left: 340px;
+    top: 80px;
+}
+
+.eightabout .socialmedia{
+    height: 30px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 55px;
+    right: 50px;
+    background-image: url(Screenshot\ 2026-04-26\ 185510.jpg);
+    background-size: cover;
+    background-position: center;
+}
+               
