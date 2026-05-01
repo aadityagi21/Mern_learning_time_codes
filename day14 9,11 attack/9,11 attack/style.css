@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #1F8FF1;
+}
+
+/* 
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    animation: billu_box 1s linear infinite ;
+}
+
+.box:hover{
+    background-color: yellowgreen;
+    transition: 1s;
+}
+
+@keyframes billu_box {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(350%);
+        background-color: red;
+    }
+    50%{
+        transform: translate(350%,100%);
+        background-color: blue;
+    }
+    75%{
+        transform: translate(0,100%);
+        background-color: green;
+    }
+}
+
+.box2{
+    display: flex;
+}
+
+.box2 h1{
+    animation: billu_box2 500ms linear 0s infinite;
+}
+
+@keyframes billu_box2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    background-image: url("https://t4.ftcdn.net/jpg/01/78/69/53/360_F_178695324_UuIeZbpaRxmXRU5N4eBbhKjoTcekAvWV.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    animation: billu_box3 10s linear 0s infinite;
+}
+
+#a{
+    left: 2%;
+}
+
+#b{
+    left: 20%;
+}
+
+#c{
+    left: 40%;
+}
+#d{
+    left: 80%;
+}
+
+@keyframes billu_box3 {
+    0%{
+        rotate: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ */
+
+.aeroplane{
+    height: 200px;
+    width: 530px;
+    background-color: #1F8FF1;
+    transform: translateY(100%);
+    background-image: url(https://t3.ftcdn.net/jpg/02/30/36/54/360_F_230365445_fagF1WTQnck58J6ftJrG1ulForxkdyD9.jpg);
+    background-position: center;
+    background-size: cover;
+
+    animation: billu_aeroplane 1s linear 0s infinite;
+}
+
+.building{
+    height: 500px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxFY3VaNiOXaxcWReYBUtvco4XoKO-igTWA&s);
+    background-position: center;
+    background-size: cover;
+    animation: billu_building 1s linear 0s infinite;
+}
+
+@keyframes billu_aeroplane {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translate(200%,100%);
+        background-color: none;
+        background-image: none;
+    }
+}
+
+@keyframes billu_building {
+    0%{
+        left: 85%;
+    }
+    100%{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7T8GO9QwUPUezumpBc949UVqLQhflnnixdQ&s);
+        background-position: center;
+        background-size: cover;
+        
+    }
+}
