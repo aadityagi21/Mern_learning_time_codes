@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 0px 0px;
+
+}
+
+.hero .left{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: end;
+}
+
+.hero .left h1{
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 155px;
+    position: absolute;
+    top: 0;
+    line-height: 130px;
+}
+
+
+.hero .left span{
+    color: red;
+}
+
+.hero .left p{
+    padding-bottom: 20px;
+}
+
+.hero .middle{
+    background-color: gray;
+    height: 100%;
+    width: 50%;
+    background-image: url(ChatGPT\ Image\ Apr\ 25\,\ 2026\,\ 11_58_59\ AM.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .right{
+    /* background-color: yellowgreen; */
+    height: 100%;
+    width: 25%;
+
+}
+
+.right .top{
+    /* background-color: saddlebrown; */
+    height: 25%;
+    width: 100%;
+    display: flex;
+}
+
+.right .top .left{
+    /* background-color: chartreuse; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .top .left p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    
+}
+
+.right .top .sec_right{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 50%;
+}
+
+.top .sec_right .upline{
+    background-color: black;
+    height: 5%;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.top .sec_right .downline{
+    background-color: black;
+    height: 5%;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.right .bottom{
+    /* background-color: royalblue; */
+    height: 50%;
+    width: 100%;
+}
+
+.about{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
