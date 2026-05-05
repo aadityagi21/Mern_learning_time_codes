@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+  /* background-color: #BBBBBB; */
+  background-color: #C9194A;
+  /* background-color: orangered; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .panda_ear{
+  height: 30px;
+  width: 30px;
+  background-color: #3F3655;
+  border: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+}
+
+.hero .left_ear{
+  left: 610px;
+  top: 100px;
+  transform: rotate(-51deg);
+}
+
+.hero .right_ear{
+  right: 610px;
+  top: 100px;
+  transform: rotate(51deg);
+}
+
+.hero .panda_face{
+  height: 120px;
+  width: 120px;
+  border: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  background-color: white;
+  position: relative;
+}
+
+.hero .panda_eye{
+  height: 30px;
+  width: 25px;
+  background-color: #3E3656;
+  position: absolute;
+  border-radius: 44%;
+  z-index: 1;
+}
+
+.hero .left_eye{
+  top: 30px;
+  left: 20px;
+  rotate: -45deg;
+}
+
+.hero .right_eye{
+  top: 30px;
+  right: 20px;
+  rotate: 45deg;
+}
+
+
+.panda_left_eye_pupil{
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  /* top: 15px; */
+  /* left: 6px; */
+}
+
+.panda_right_eye_pupil{
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  /* top: 15px;
+  right: 6px; */
+}
+
+.panda_cheecks{
+  height: 14px;
+  width: 20px;
+  background-color: #FF8DB3;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.left_cheeck{
+  top: 57px;
+  left: 20px;
+  rotate: 20deg;
+}
+
+.right_cheeck{
+  top: 57px;
+  right: 20px;
+  rotate: -20deg;
+}
+
+.panda_nose{
+  height: 16px;
+  width: 16px;
+  background-color: #3E3656;
+  border-top-left-radius: 100%;
+  rotate: 45deg;
+  position: absolute;
+  top: 65px;
+  left: 49px;
+}
+
+.panda_smile_left_part{
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border-bottom: 2px solid #3E3656;
+  border-right: 1px solid #3E3656;
+  position: absolute;
+  top: 77px;
+  left: 38px;
+  
+}
+.panda_smile_right_part{
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border-bottom: 2px solid #3E3656;
+  position: absolute;
+  top: 77px;
+  right: 38px;
+  
+  
+}
+
+.hero .mainbody{
+  height: 50%;
+  width: 30%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.username{
+  display: flex;
+  gap: 10px;
+}
+
+.hero .mainbody .username_icon{
+  height: 20px;
+  width: 20px;
+  background-color: none;
+  background-image: url("user.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.password{
+  display: flex;
+  gap: 10px;
+}
+
+.hero .mainbody .password_icon{
+  height: 20px;
+  width: 20px;
+  background-color: none;
+  background-image: url("padlock.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainbody #username_box{
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.mainbody #password_box{
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+input[type="text"]:focus{
+  outline:none;
+  
+  
+}
+
+input[type="password"]{
+  outline:none;
+}
+
+.login_button{
+  margin-top: 20px;
+  height: 40px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #B2B2B2;
+}
+
+.login_button h1{
+  font-size: 23px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.login_button:active{
+  scale: 0.9;
+  cursor: default;
+}
+
+.login_button h1:hover{
+  cursor: default;
+}
+
+.hero .pandalegs{
+  height: 50px;
+  width: 50px;
+  background-color: #3F3654;
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.left_leg{
+  top: 510px;
+  left: 580px;
+}
+
+.right_leg{
+  top: 510px;
+  right: 580px;
+}
+
+.pandalegs .legpaw{
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 12px;
+  margin-top: 19px;
+}
+
+.leg_finger{
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.finger1{
+  top: 10px;
+  left: 6px;
+}
+
+.finger2{
+  top: 5px;
+  left: 19px;
+}
+
+.finger3{
+  top: 10px;
+  right: 7px;
+}
+
+.panda_hands{
+  height: 70px;
+  width: 50px;
+  background-color: #3F3655;
+  position: absolute;
+  border: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.left_hand{
+  top: 200px;
+  left: 550px;
+  z-index: 1;
+}
+
+.right_hand{
+  top: 200px;
+  right: 550px;
+  z-index: 1;
+}
+
+@keyframes panda_left_pupil {
+  from{
+    transform: translate(0, 0);
+  }
+  to{
+    transform: translate(-2px, 8px);
+  }
+}
+
+@keyframes panda_right_pupil {
+  from{
+    transform: translate(0, 0);
+  }
+  to{
+    transform: translate(0px, 8px);
+  }
+}
+
+.hero:focus-within .panda_left_eye_pupil {
+  animation: panda_left_pupil 0.3s forwards;
+}
+
+.hero:focus-within .panda_right_eye_pupil {
+  animation: panda_right_pupil 0.3s forwards;
+}
+
+@keyframes panda_left_hand_rotate{
+  from{
+    transform: rotate(0);
+    height: 70px;
+  }
+  to{
+    transform: rotate(-140deg);
+    height: 150px;
+    top: 110px;
+    left: 600px;
+
+  }
+}
+
+@keyframes panda_right_hand_rotate{
+  from{
+    transform: rotate(0);
+    height: 70px;
+  }
+  to{
+    transform: rotate(140deg);
+    height: 150px;
+    top: 110px;
+    right: 600px;
+
+  }
+}
+
+.hero:focus-within .left_hand{
+  animation: panda_left_hand_rotate 1s linear forwards;
+}
+
+.hero:focus-within .right_hand{
+  animation: panda_right_hand_rotate 1s linear forwards;
+}
