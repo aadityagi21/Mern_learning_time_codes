@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/731/227/non_2x/sad-boy-anime-boy-illustration-for-wallpaper-minimalist-boy-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #777576;
+    display: grid;
+    grid-template-columns: repeat(46,30px);
+    grid-template-rows: repeat(10,30px);
+}
+
+.drop{
+    height: 10px;
+    width: 1px;
+    rotate: -45deg;
+    background-color: white;
+}
+
+.drop:nth-child(1){
+        animation: rain 3s linear 0.1s infinite;
+}
+.drop:nth-child(2){
+        animation: rain 3s linear 0.2s infinite;
+}
+.drop:nth-child(3){
+        animation: rain 3s linear 0.3s infinite;
+}
+.drop:nth-child(4){
+        animation: rain 3s linear 0.1s infinite;
+}
+.drop:nth-child(5){
+        animation: rain 3s linear 0.2s infinite;
+}
+.drop:nth-child(6){
+        animation: rain 3s linear 0.3s infinite;
+}
+.drop:nth-child(7){
+    animation: rain 3s linear 0.4s infinite;
+}
+.drop:nth-child(8){
+    animation: rain 3s linear 0.2s infinite;
+}
+.drop:nth-child(9){
+    animation: rain 3s linear 0.3s infinite;
+}
+.drop:nth-child(10){
+    animation: rain 3s linear 0.2s infinite;
+}
+.drop:nth-child(11){
+    animation: rain 3s linear 0.3s infinite;
+}
+.drop:nth-child(12){
+        animation: rain 3s linear 0.2s infinite;
+}
+.drop:nth-child(13){
+        animation: rain 3s linear 0.3s infinite;
+}
+.drop:nth-child(14){
+    animation: rain 3s linear 0.3s infinite;
+}
+.drop:nth-child(15){
+        animation: rain 3s linear 0.2s infinite;
+}
+.drop:nth-child(16){
+        animation: rain 3s linear 0.3s infinite;
+}
+.drop:nth-child(17){
+        animation: rain 3s linear 0.2s infinite;
+}
+.drop:nth-child(18){
+        animation: rain 3s linear 0.3s infinite;
+}
+
+@keyframes rain {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(-1000px,2500px);
+    }
+}
+

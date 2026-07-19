@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: snow;
+        }
+        h1{
+            font-size: 5rem;
+            margin-left: 90px;
+        }
+        button{
+            height: 2rem;
+            border-radius: 10px;
+            border: none;
+            margin: 20px;
+            border: 5px solid gray;
+        }
+        button:active{
+            scale: 0.8;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <h1>0</h1>
+    <button class="inc">Increase</button>
+    <button class="dec">Decrease</button>
+</body>
+
+<script>
+    let Buttons = document.getElementsByTagName("button");
+    let h1 = document.getElementsByTagName("h1");
+
+    
+    let count = localStorage.getItem("count") || 0;
+    // console.log(count);
+    
+    h1[0].innerText = localStorage.getItem("count");
+
+    function incFun(){
+        localStorage.setItem("count",0);
+        count++;
+        localStorage.setItem("count",count);
+        h1[0].innerText = count;
+    };
+
+    function decFun(){
+        count--;
+        localStorage.setItem("count",count);
+        h1[0].innerText = count;
+    };
+
+    Buttons[0].addEventListener("click",incFun);
+    Buttons[1].addEventListener("click",decFun);
+</script>
+</html>

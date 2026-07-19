@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.stockcake.com/public/2/0/f/20f53ac0-b87f-4fa4-a39b-5337cd9f7ce1_large/sunlit-cloudy-sky-stockcake.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    scrollbar-width: none;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 400px;
+
+    animation-name: plane;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes plane {
+    0%{
+        left: 0;
+        top: 400px;
+    }
+    40%{
+        left: 500px;
+        top: 30px;
+        rotate: 90deg;
+    }
+    45%{
+        top: 700px;
+        left: 500px;
+        rotate: 90deg;
+    }
+    60%{
+        rotate: 0deg;
+    }
+    100%{
+        
+        left: 1370px;
+        top: 0px;
+    }
+
+}

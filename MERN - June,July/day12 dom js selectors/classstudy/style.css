@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* div{
+    height: 50px;
+    width: 200px;
+}
+
+.sec{
+    width: 50px;
+    border-radius: 50%;
+} */
+
+/* img{
+    height: 300px;
+    width: 300px;
+}
+
+.heading{
+    color: red;
+} */

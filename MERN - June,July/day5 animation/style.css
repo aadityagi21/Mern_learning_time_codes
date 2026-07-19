@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.ball{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    animation-name: ball;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.b{
+    margin-left: 300px;
+}
+
+.c{
+    margin-left: 600px;
+}
+
+.d{
+    margin-left: 900px;
+}
+
+.e{
+    margin-left: 1200px;
+}
+
+.shadow{
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    position: relative;
+    top: 68%;
+    border-radius: 50%;
+    animation-name: shadow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes ball {
+    0%{
+        top: 0%;
+        left: 0%;
+    }
+    50%{
+        top: 25%;
+        left: 0%;
+    }
+    100%{
+        top: 50%;
+        left: 0%;
+    }
+}
+
+@keyframes shadow {
+    from{
+        transform: scale(1) rotateX(60deg);
+        
+    }
+    to{
+        transform: scale(0.5) rotateX(60deg);
+    }
+}

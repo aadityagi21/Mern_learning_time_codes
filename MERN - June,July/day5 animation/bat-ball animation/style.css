@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  scrollbar-width: none;
+}
+
+.ball{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+    animation-name: ball;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bat{
+    height: 400px;
+    width: 400px;
+    background-image: url("—Pngtree—cricket\ bat_7253992.png");
+    background-size: cover;
+    /* border-radius: 10px solid black;
+    background-color: black; */
+    rotate: -45deg;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    animation: bat 3s linear infinite;
+}
+
+@keyframes ball {
+    0%{
+        top: 30%;
+        left: 0%;
+    }
+    50%{
+        top: 90%;
+        left: 60%;
+    }
+    90%{
+        left: 87%;
+        top: 70%;
+    }
+    100%{
+        top: 30%;
+        left: 0%;
+    }
+}
+
+@keyframes bat {
+    0%{
+        rotate: -45deg;
+    }
+    90%{
+        rotate: -45deg ;
+    }
+    100%{
+        rotate: -35deg;
+    }
+}
+
+.ballcatch{
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    background-image: url("image.png");
+    background-position: center;
+}

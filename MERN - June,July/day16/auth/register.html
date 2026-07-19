@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>registration-form</title>
+</head>
+
+<body>
+    <div class="hero">
+        <form class="registerForm">
+            <input type="text" id="username" placeholder="UserName">
+            <input type="email" id="emailRegister" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit" id="submit">Register</button>
+            <button><a href="/index.html">login</a></button>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector(".registerForm");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            let arr = form.elements;
+
+            let username = arr[0].value;
+            let email = arr[1].value;
+            let password = arr[2].value;
+
+            let obj = {
+                username: username,
+                email: email,
+                password: password
+            }
+            localStorage.setItem("user", JSON.stringify(obj));
+
+            document.querySelector("#submit").style.background = "green";
+            document.querySelector("#submit").innerText = "Done";
+        })
+    </script>
+</body>
+
+</html>
