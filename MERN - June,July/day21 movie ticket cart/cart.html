@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <script>
+        const body = document.querySelector("body");
+        let total = 0;
+
+        const upperSec = document.createElement("div");
+        upperSec.setAttribute("class", "upperSec");
+
+        const homeBut = document.createElement("a");
+        homeBut.setAttribute("class", "homeBut");
+        homeBut.innerText = "Home";
+        homeBut.href = "index.html";
+
+        const cartBut = document.createElement("a");
+        cartBut.setAttribute("class", "carBut");
+        cartBut.innerText = "CART";
+        cartBut.href = "cart.html";
+
+        let totalPrice = document.createElement('p');
+        totalPrice.setAttribute("class","totalPrice");
+        totalPrice.innerText = `Price : ${total}`;
+
+        upperSec.append(homeBut, cartBut,totalPrice);
+        body.append(upperSec);
+
+        const div = document.createElement('div');
+        div.setAttribute("class", "div");
+        body.append(div);
+
+        let cartArr = JSON.parse(localStorage.getItem('cartArr')) || [];
+        
+
+        console.log(cartArr);
+
+        function displayData(image, name, genre, price, index) {
+            totalCalc(cartArr);
+            let card = document.createElement("div");
+            card.setAttribute("class", "card");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", image);
+
+            let nameh1 = document.createElement("h1");
+            nameh1.innerText = name;
+
+            let genreh1 = document.createElement("h1");
+            genreh1.innerText = genre;
+
+            let priceh1 = document.createElement("h1");
+            priceh1.innerText = `Price : ${price}`;
+
+            let removeBut = document.createElement("button");
+            removeBut.setAttribute("class", "removeBut");
+            removeBut.innerText = "❌";
+
+            removeBut.addEventListener("click", () => {
+                cartArr.splice(index, 1);
+                div.innerHTML = "";
+                cartArr.forEach((movie, index) => {
+                    displayData(movie.image, movie.name, movie.genre, movie.price, index);
+                });
+                localStorage.setItem("cartArr", JSON.stringify(cartArr));
+                totalCalc(cartArr);
+            })
+
+
+            card.append(img, nameh1, genreh1, priceh1, removeBut);
+
+            div.append(card);
+
+        }
+
+        cartArr.forEach((movie, index) => {
+            displayData(movie.image, movie.name, movie.genre, movie.price, index);
+        });
+
+        function totalCalc(cartArr){
+            let sum = 0;
+            for(let i=0;i<cartArr.length;i++){
+                sum +=cartArr[i].price;
+            }
+            totalPrice.innerText = `Price : ₹${sum}`;
+            console.log(sum);
+        }
+
+        a.reduce((prev,curr)=>{
+            prev = prev + curr;
+        },0)
+
+    </script>
+</body>
+
+</html>

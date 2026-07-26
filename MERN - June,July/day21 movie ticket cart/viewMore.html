@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>ViewMore</title>
+</head>
+
+<body>
+    <script>
+        const body = document.querySelector("body");
+
+        const upperSec = document.createElement("div");
+        upperSec.setAttribute("class", "upperSec");
+
+        const homeBut = document.createElement("a");
+        homeBut.setAttribute("class", "homeBut");
+        homeBut.innerText = "Home";
+        homeBut.href = "index.html";
+
+        const cartBut = document.createElement("a");
+        cartBut.setAttribute("class", "carBut");
+        cartBut.innerText = "CART";
+        cartBut.href = "cart.html";
+
+        upperSec.append(homeBut, cartBut);
+        body.append(upperSec);
+
+        const div = document.createElement('div');
+        div.setAttribute("class", "div");
+        body.append(div);
+
+        let movie = JSON.parse(localStorage.getItem('movie'));
+        displayData(movie);
+
+        function displayData(movie) {
+
+            let card = document.createElement("div");
+            card.setAttribute("class", "card");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", movie.image);
+
+            let nameh1 = document.createElement("h1");
+            nameh1.innerText = movie.name;
+
+            let genreh1 = document.createElement("h1");
+            genreh1.innerText = movie.genre;
+
+            let priceh1 = document.createElement("h1");
+            priceh1.innerText = `Price : ${movie.price}`;
+
+
+            card.append(img, nameh1, genreh1, priceh1);
+
+            div.append(card);
+
+        }
+
+        
+    </script>
+</body>
+
+</html>
