@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="head">
+            <a href="../index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <h1 class="priceh1">Total Price :</h1>
+        </div>
+        <div class="products"></div>
+    </div>
+    <script>
+        let priceh1 = document.querySelector(".priceh1");
+        let cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
+        let totalSum = 0;
+        displayProductHandler();
+        console.log(cartArray);
+
+        function displayProductHandler() {
+            totalPrice();
+            document.querySelector(".products").innerHTML = "";
+            cartArray.forEach((product,index) => {
+                displayProduct(product,index);
+                
+            });
+        }
+
+        function displayProduct(product,index) {
+            const card = document.createElement("div");
+            card.setAttribute("class", "card");
+
+            const img = document.createElement("img");
+            img.setAttribute("src", `${product.image}`);
+
+            const productNameh1 = document.createElement("h1");
+            productNameh1.innerText = `${product.productName}`;
+
+            const brandNameh2 = document.createElement("h2");
+            brandNameh2.innerText = `${product.brandName}`;
+
+            const descriptionh2 = document.createElement("h2");
+            descriptionh2.innerText = `${product.description}`;
+
+            const priceh2 = document.createElement("h2");
+            priceh2.innerText = `${product.price}`;
+
+            const buttons = document.createElement("div");
+            buttons.setAttribute("class", "buttons");
+
+            const remove = document.createElement("button");
+            remove.innerText = `Remove`;
+
+            remove.addEventListener("click", () => {
+                cartArray.splice(index,1);
+                localStorage.setItem("cartArray", JSON.stringify(cartArray));
+                console.log(cartArray);
+                displayProductHandler();
+                totalPrice();
+            })
+
+            const placeOrder = document.createElement("button");
+            placeOrder.innerText = `Place Order ?`; 
+
+            placeOrder.addEventListener("click",()=>{
+                placeOrder.style.color = "green";
+                placeOrder.innerText = "Order Placed";
+            })
+
+            buttons.append(remove,placeOrder);
+            card.append(img, productNameh1, brandNameh2, descriptionh2, priceh2, buttons);
+            document.querySelector(".products").append(card);
+        }
+
+        function totalPrice(){
+            totalSum = 0;
+            cartArray.forEach((product)=>{
+                totalSum += Number(product.price);
+            });
+            priceh1.innerText = `Total Sum : ${totalSum}`;
+        }
+
+    </script>
+</body>
+
+</html>

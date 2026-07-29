@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="viewmore.css">
+    <title>ViewMore</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="head">
+            <a href="../index.html">Home</a>
+            <a href="../cart/cart.html">Cart</a>
+        </div>
+        <div class="products"></div>
+    </div>
+    <script>
+        let product = JSON.parse(localStorage.getItem("viewMoreProduct"));
+        console.log(product);
+        displayProduct(product);
+        function displayProduct(product) {
+            console.log("meow");
+            const card = document.createElement("div");
+            card.setAttribute("class", "card");
+
+            const img = document.createElement("img");
+            img.setAttribute("src", `${product.image}`);
+
+            const productNameh1 = document.createElement("h1");
+            productNameh1.innerText = `${product.productName}`;
+
+            const brandNameh2 = document.createElement("h2");
+            brandNameh2.innerText = `${product.brandName}`;
+
+            const descriptionh2 = document.createElement("h2");
+            descriptionh2.innerText = `${product.description}`;
+
+            const priceh2 = document.createElement("h2");
+            priceh2.innerText = `${product.price}`;
+
+            const buttons = document.createElement("div");
+            buttons.setAttribute("class", "buttons");
+
+
+            const addCartButton = document.createElement("button");
+            addCartButton.innerText = `Add to Cart`;
+
+            addCartButton.addEventListener("click", () => {
+                let cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
+                cartArray.push(product);
+                localStorage.setItem("cartArray", JSON.stringify(cartArray));
+                console.log(cartArray);
+            })
+
+            buttons.append(addCartButton);
+            card.append(img, productNameh1, brandNameh2, descriptionh2, priceh2, buttons);
+            document.querySelector(".products").append(card);
+        }
+    </script>
+</body>
+
+</html>

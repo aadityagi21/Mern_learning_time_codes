@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scrollbar-width: none;
+}
+
+.hero{
+    height: 95%;
+    width: 95%;
+    /* background-color: #000; */
+    border-radius: 20px;
+    border: 20px solid saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ani 0.4s infinite linear;  
+}
+
+.cir{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    /* background-color: aquamarine; */
+    border: 20px solid #000;
+    /* border-bottom: 20px solid blue;
+    border-top: 20px solid blue; */
+    animation: anim 10s infinite linear;
+    cursor: pointer;
+}
+
+.cir:active{
+    scale: 0.8;
+    transition: 0.1s linear;
+}
+
+@keyframes ani {
+    0%{
+        rotate: 0;
+        
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 360deg;
+
+    }
+}
+
+@keyframes anim {
+    0%{
+        rotate: 0;
+        scale: 1;
+        transition: 0.2s;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 360deg;
+        scale: 0.3;
+        transition: 0.2s;
+    }
+}
