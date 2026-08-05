@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.firstPage,.secondPage{
+    height: 100%;
+    width: 100%;
+}
+
+.firstPage{
+    background-color: yellow;
+}
+
+.secondPage{
+    background-color: green;
+    position: relative;
+    z-index: 1;
+}
+
+.box{
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: red;
+    position: fixed;
+    z-index: 0;
+}
+
+.secbox{
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+}
